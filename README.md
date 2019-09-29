@@ -16,6 +16,12 @@
  *      4、复用bitmap，有Bitmap复用池，如果大小超出了缓存的bitmap，如果不能复用才创建新的Bitmap
  *      5、自动管理生命周期,with(this)，内部创建了Fragment来监听Activity的生命周期
  *      6、同一张图片会缓存多个不同尺寸，速度快
+ *      7、可配置度高、自适应度高；
+ *      8、支持多种数据源，本地、网络，assets gif在glide是支持
+ *      9、高效缓存，支持memory和disk图片缓存，默认使用二级缓存
+ *      10、高效处理Bitmap：使用Bitmap pool复用Bitmap
+ *      11、图片加载过程可以监听
+ *      12、生命周期集成到Glide
  * Glide的缺点：
  *      1、加载Gif图片时，如果最后一帧为透明，会出现闪烁的情况
  *      2、Glide使用的时候消耗内存比较严重
